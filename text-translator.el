@@ -260,6 +260,7 @@ specified site, and receives translation result."
                      "")
                  text-translator-post-string-replace-alist))
       (unless (string= "" str)
+	(setq text-translator-last-translated-text str)
         (delete-process proc)
         (setq bname (buffer-name))
         (setq all-flag (not (string= bname text-translator-work-buffer)))

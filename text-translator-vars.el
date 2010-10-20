@@ -432,6 +432,8 @@ against the translation engines that processes per line."
 
 (defvar text-translator-sitedata-hash nil)
 
+(defvar text-translator-last-translated-text nil)
+
 (provide 'text-translator-vars)
 ;;; text-translator-vars.el ends here
 
